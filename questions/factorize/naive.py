@@ -6,9 +6,6 @@ def factorize(number):
 
     e.g. 270 = 2 * 3 * 3 * 3 * 5
     """
-    if number == 1:
-        return [1]
-
     result = []
     q = 2
     r = number
@@ -17,4 +14,4 @@ def factorize(number):
             r = r / q
             result.append(q)
         q += 1
-    return result
+    return result if len(result) > 1 else []
