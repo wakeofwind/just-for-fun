@@ -61,12 +61,26 @@ int test_odd_count_of_elements_in_array()
     return 0;
 }
 
+int test_repeated_elements()
+{
+    int array[] = {2, 6, 15, 42, 71, 71, 89};
+    int result = binary_search(array, 7, 71);
+    assert(result == 4);
+
+    int array1[] = {2, 42, 42, 42, 42, 42, 89, 100};
+    int result1 = binary_search(array1, 8, 42);
+    assert(result1 == 1);
+
+    return 0;
+}
+
 int main() {
     test_normal();
     test_not_found();
     test_empty_array();
     test_only_one_element_in_array();
     test_odd_count_of_elements_in_array();
+    test_repeated_elements();
 
     return 0;
 }
