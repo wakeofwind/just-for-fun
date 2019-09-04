@@ -2,7 +2,7 @@
 
 
 def find_primes(n):
-    """Find primes less than N."""
+    """Find primes smaller than N."""
     primes = [] if n < 3 else [2]
 
     i = 3
