@@ -12,6 +12,6 @@ def find_primes(n):
                 break
         else:
             primes.append(i)
-        i += 1
+        i += 2
 
     return primes
